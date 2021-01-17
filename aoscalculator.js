@@ -5,4 +5,16 @@ function averageDamage(inputAttack, inputHit, inputWound, inputRend, inputSave, 
   return inputAttack * outputHit * outputWound * outputSave * inputDamage;
 }
 
-console.log(averageDamage(1, 4, 4, 0, 4, 1));
+var form = document.getElementById('input-fields')
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+  var data = new FormData(form);
+  var attacks = Number(data.get("inputAttack"));
+  var hits = Number(data.get("inputHit"));
+  var wound = Number(data.get("inputWound"));
+  var rend = Number(data.get("inputRend"));
+  var save = Number(data.get("inputSave"));
+  var damage = Number(data.get("inputDamage"));
+  var result = averageDamage(attacks, hits, wound, rend, save, damage);
+  document.getElementById("result").innerText = "Result: " + result;
+})
