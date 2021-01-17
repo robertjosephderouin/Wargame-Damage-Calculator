@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>
+      Age of Sigmar Average Damage Calculator
+    </title>
+  </head>
+  <body>
+    <h1>
+      Age of Sigmar Average Damage Calculator
+    </h1>
+    <p>
+      This simple calculator predicts the average damage output of any number of similar. <br>
+      If the weapon has variable damage, simple input its average. D6 becomes 3, d3 becomes 1.5. <br>
+      Input your values below and hit calculate.
+    </p>
+    <form>
+      <fieldset>
+        <div>
+          <label for="inputAttack">
+          Input number of attacks between 1 & infinite.
+          </label>
+          <input id="inputAttack" type="number" name="inputAttack" min="1"/>
+        </div>
+        <div>
+          <label for="inputHit">
+            Input to hit between 2 & 6.
+          </label>
+          <input id="inputHit" type="number" name="inputHit" min="2" max="6"/>
+        </div>
+        <div>
+          <label for="inputWound">
+            Input to wound between 2 & 6.
+          </label>
+          <input id="inputWound" type="number" name="inputWound" min="2" max="6"/>
+        </div>
+        <div>
+          <label for="inputRend">
+            Input rend value between 0 and infinite.
+          </label>
+          <input id="inputRend" type="number" name="inputRend"/>
+        </div>
+        <div>
+          <label for="inputSavesave">
+            Input the targets save between 2 and 6.
+          </label>
+          <input id="inputSave" type="number" name="inputSave" min="2" max="6"/>
+        </div>
+        <div>
+          <label for="inputDamage">
+            Input the damage value between 1 and infinite.
+          </label>
+          <input id="inputDamage" type="number" name="inputDamage" min="1"/>
+        </div>
+        <div>
+          <input type="submit" id="submit" value="Calculate!"/>
+        </div>
+      </fieldset>
+    </form>
+    <script src="./aoscalculator.js">
+    </script>
+  </body>
+</html>
