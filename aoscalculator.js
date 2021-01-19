@@ -1,7 +1,7 @@
 function averageDamage(inputAttack, inputHit, inputWound, inputRend, inputSave, inputDamage) {
   var outputHit = ((7 - inputHit) / 6);
   var outputWound = ((7 - inputWound) / 6);
-  var outputSave =  ((7 - ( inputSave - inputRend) / 6));
+  var outputSave =  ((7 - ( inputSave - inputRend)) / 6);
   return inputAttack * outputHit * outputWound * outputSave * inputDamage;
 }
 
