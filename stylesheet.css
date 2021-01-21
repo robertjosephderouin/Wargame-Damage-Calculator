@@ -13,13 +13,22 @@ h1 {
 
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
+  color: #f5f9ff;
+  text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  line-height: 2;
   text-align: center;
   background-image: linear-gradient(#69a2ff, #4088ff, #1859c4);
 }
 
 .button {
+  padding: 5px 10px;
   border: none;
   border-radius: 20%;
-  background: #8eaaad;
+  background-image: linear-gradient(#a1c4c7, #8eaaad, #768f91);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+footer {
+  color: black;
+  text-shadow: 0px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
